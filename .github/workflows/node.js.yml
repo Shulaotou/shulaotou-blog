@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [14.15.0]
 
     steps:
       - uses: actions/checkout@v2
@@ -25,6 +25,6 @@ jobs:
           ftp-username: ${{ secrets.ftp_user }}
           ftp-password: ${{ secrets.ftp_pwd }}
           local-dir: ./build/
-          serve-dir: ./webserve/
+          server-dir: ./webserve/
         env:
           CI: true

@@ -24,6 +24,7 @@ jobs:
           ftp-server: 47.118.48.211
           ftp-username: ${{ secrets.ftp_user }}
           ftp-password: ${{ secrets.ftp_pwd }}
-          local-dir: build/
+          local-dir: ./build/
+          serve-dir: ./webserve/
         env:
           CI: true
